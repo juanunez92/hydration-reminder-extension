@@ -1,37 +1,38 @@
 # Hydration Reminder Extension
 
-Extensión para Firefox que ayuda a recordar al usuario cuándo debe beber agua mediante un temporizador visual interactivo.
-
----
+Extensión para Firefox que ayuda a recordar cuándo beber agua mediante un temporizador visual.
 
 ## Descripción
 
-Esta aplicación consiste en una extensión de navegador que utiliza una representación visual del tiempo mediante un vaso que se va llenando progresivamente.
+La aplicación muestra un vaso que se va llenando con el paso del tiempo.  
+Cuando el vaso se completa, indica que es momento de beber agua.
 
-Cuando el vaso se llena por completo, indica que es el momento de beber agua. El objetivo es fomentar hábitos saludables a través de una interacción sencilla, directa y visual.
+El usuario puede:
+- reiniciar el contador
+- seleccionar el intervalo de tiempo
+- ver cuántas veces ha bebido agua
 
-El proyecto parte de un ejercicio previo de reloj creativo, adaptado en este caso a una funcionalidad práctica dentro del navegador.
+## Tecnologías
 
----
+- p5.js
+- JavaScript
+- HTML / CSS
+- WebExtensions API
 
-## Funcionalidades principales
+## Uso
 
-- Temporizador visual basado en un vaso que se llena con el tiempo.
-- Selector de intervalo para definir cada cuánto tiempo se desea recibir el recordatorio (1, 5 o 10 minutos).
-- Botón para reiniciar el contador una vez que el usuario ha bebido agua.
-- Contador de veces que el usuario ha registrado haber bebido agua.
-- Persistencia de datos mediante almacenamiento local (`storeItem()` / `getItem()`).
-- Feedback visual mediante cambio de color y efecto de parpadeo cuando el temporizador finaliza.
+1. Descargar el repositorio
+2. Ir a `about:debugging` en Firefox
+3. Cargar complemento temporal
+4. Seleccionar `manifest.json`
 
----
+## Funcionalidades
 
-## Tecnologías utilizadas
+- Temporizador visual mediante animación
+- Selector de intervalo (1, 5, 10 minutos)
+- Persistencia de datos con localStorage
+- Feedback visual (cambio de color y parpadeo)
 
-- **JavaScript**
-- **p5.js** (para la animación del vaso y el canvas)
-- **HTML y CSS**
-- **WebExtensions API (Firefox)**
+## Autor
 
----
-
-## Estructura del proyecto
+Juan Antonio Núñez
