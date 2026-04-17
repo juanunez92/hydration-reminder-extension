@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hydration Reminder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="p5.min.js"></script>
+</head>
+
+<body>
+    <h2>Hydration Reminder</h2>
+    <div id="canvasContainer"></div>
+    <div id="controls">
+        <button id="drinkBtn">He bebido agua</button>
+
+        <div id="timeControl">
+            <label for="timeSelect">Intervalo:</label>
+            <select id="timeSelect">
+                <option value="60000">1 minuto</option>
+                <option value="300000">5 minutos</option>
+                <option value="600000">10 minutos</option>
+            </select>
+        </div>
+    </div>
+    <p id="statusText">Tiempo restante...</p>
+    <p id="countText">Has bebido agua 0 veces</p>
+    <script src="sketch.js"></script>
+</body>
+
+</html>

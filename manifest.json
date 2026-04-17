@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Hydration Reminder",
+  "version": "1.0",
+  "description": "Recordatorio visual para beber agua",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
